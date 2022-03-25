@@ -1,11 +1,12 @@
 const express = require('express')
 const app = new express()
-const db = require('better-sqlite3')('NVTutoring.db')
+//const db = require('better-sqlite3')('NVTutoring.db')
+const port = process.env.port || 8080
+const path = require('path')
 
 app.use(express.static("build"))
 app.use(express.json())
-
-
+app.use(express.static(path.join(__dirname, "/client/build")))
 
 app.get('/tutor_sessions', (req, res) => {
     const query = db.prepare("SELECT * FROM tutor_sessions")
@@ -15,7 +16,6 @@ app.get('/tutor_sessions', (req, res) => {
     })
 })
 
-
 app.get('/users', (req, res) => {
     const query = db.prepare("SELECT * FROM users")
     const users = query.all()
@@ -24,10 +24,6 @@ app.get('/users', (req, res) => {
     })
 })
 
-
-
-
-
-app.listen(8080, () => {
+app.listen(port, () => {
     console.log("Server ON")
 })
