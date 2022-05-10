@@ -1,4 +1,5 @@
 import { Table } from 'reactstrap';
+import React, {useState, useEffect} from 'react'
 
 function Home() {
     return (
@@ -10,43 +11,22 @@ function Home() {
                 <Table>
                     <thead>
                         <tr>
-                            <th>
-                                Tutor
-                            </th>
-                            <th>
-                                Subject
-                            </th>
-                            <th>
-                                Date
-                            </th>
-                            <th>
-                                Time Frame
-                            </th>
-                            <th>
-                                Notes
-                            </th>
+                            <th>Tutor</th>
+                            <th>Subject</th>
+                            <th>Date</th>
+                            <th>Time Frame</th>
+                            <th>Notes</th>
                         </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    Liam Gallagher
-                                </td>
-                                <td>
-                                    Math
-                                </td>
-                                <td>
-                                    5/10/2022
-                                </td>
-                                <td>
-                                    After School
-                                </td>
-                                <td>
-                                    N/A
-                                </td>
-                            </tr>
-                            
-                        </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Liam Gallagher</td>
+                            <td>Math</td>
+                            <td>5/10/2022</td>
+                            <td>After School</td>
+                            <td>N/A</td>
+                        </tr>    
+                    </tbody>
                 </Table>
             </div>
         </div>
