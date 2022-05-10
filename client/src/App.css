@@ -72,18 +72,19 @@ body {
 }
 
 #tutorList {
-  width: 50%;
+  width: 55%;
   float: right;
   text-align: center;
   align-items: center;
 }
 
 th, td {
-  margin: 0;
+  font-size: 1.3em;
   padding: 0;
   width: 10em;
-  border-bottom: .2em solid gray;
+  border: .1em solid gray;
   display:inline-block;
+  word-wrap: break-word;
 }
 
 

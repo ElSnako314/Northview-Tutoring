@@ -1,6 +1,5 @@
 import { Table } from 'reactstrap';
 
-
 function Home() {
     return (
         <div>
@@ -8,32 +7,45 @@ function Home() {
                 <h1 id="homeTitle">Welcome to The Northview High School Tutoring Page!</h1>
             </div>
             <div id="tutorList">
-                <Table bordered={true}>
+                <Table>
                     <thead>
                         <tr>
                             <th>
-                                Head 1
+                                Tutor
                             </th>
                             <th>
-                                Head 2
+                                Subject
                             </th>
                             <th>
-                                Head 3
+                                Date
+                            </th>
+                            <th>
+                                Time Frame
+                            </th>
+                            <th>
+                                Notes
                             </th>
                         </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>
-                                    Muck
+                                    Liam Gallagher
                                 </td>
                                 <td>
-                                    Suck
+                                    Math
                                 </td>
                                 <td>
-                                    Yuck
+                                    5/10/2022
+                                </td>
+                                <td>
+                                    After School
+                                </td>
+                                <td>
+                                    N/A
                                 </td>
                             </tr>
+                            
                         </tbody>
                 </Table>
             </div>
