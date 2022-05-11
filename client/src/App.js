@@ -5,6 +5,7 @@ import React from 'react';
 import TabManager from './Components/TabManager.js';
 //imports TabMananger from the Components folder
 import {Link} from 'react-router-dom';
+import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
   return (

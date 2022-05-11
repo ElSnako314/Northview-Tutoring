@@ -4,7 +4,10 @@ import TutorForm from '../Forms/TutorForm';
 
 const Form = () => {
   return (
-    <div><StudentForm/></div>
+    <>
+      <div><StudentForm/></div>
+      <div><TutorForm/></div>
+    </>
   )
 }
 
