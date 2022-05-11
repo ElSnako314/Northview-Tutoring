@@ -5,37 +5,31 @@ import {CardSubtitle} from 'reactstrap';
 import {CardText} from 'reactstrap';
 import {Button} from 'reactstrap';
 
-
-
-
 export default function About() {
-    return (
-        <div>
-           <div>
-  <Card id = "card"
-    color="warning"
-
-  >
-    <CardBody>
-      <CardTitle tag="h1">
-          Name:
-      </CardTitle>
-      <CardSubtitle
-        className="mb-2 text-muted"
-        tag="h2"
+  return (
+    <div>
+      <Card id = "card"
+        color="warning"
       >
-        Tutor Status:
-      </CardSubtitle>
-      <CardText>
-        Tutor Session
-      </CardText>
-      <Button>
-        Button
-      </Button>
-    </CardBody>
-  </Card>
-</div>
-        </div>
+        <CardBody>
+          <CardTitle tag="h1">
+              Name:
+          </CardTitle>
+          <CardSubtitle
+            className="mb-2 text-muted"
+            tag="h2"
+          >
+            Tutor Status:
+          </CardSubtitle>
+          <CardText>
+            Tutor Session
+          </CardText>
+          <Button>
+            Button
+          </Button>
+        </CardBody>
+      </Card>
+    </div>
         //Northview Tutoring Profile Page
     )
 }
