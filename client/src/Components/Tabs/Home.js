@@ -25,7 +25,14 @@ function Home() {
                             <td>5/10/2022</td>
                             <td>After School</td>
                             <td>N/A</td>
-                        </tr>    
+                        </tr>
+                        <tr>
+                            <td>Frank Lee</td>
+                            <td>Science</td>
+                            <td>5/20/2022</td>
+                            <td>5th Period</td>
+                            <td>Calculator</td>
+                        </tr> 
                     </tbody>
                 </Table>
             </div>
