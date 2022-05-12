@@ -87,6 +87,15 @@ th, td {
   word-wrap: break-word;
 }
 
+label {
+  display: inline-block;
+}
+
+.text {
+  padding: 6px;
+  font-size: 2em;
+  border-radius: 4px;
+}
 
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */

@@ -1,10 +1,11 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
 const StudentForm = () => {
     const [name, setName] = useState('')
     const [free, setFree] = useState('')
     const [subjects, setSubjects] = useState('')
     const [email, setEmail] = useState('')
+    
 
     const handleSubmit = () => {
         const config = {
@@ -12,7 +13,7 @@ const StudentForm = () => {
             "headers": {
                 "Content-Type": "application/json"
             },
-            "body":JSON.stringify({
+            "body": JSON.stringify({
                 name,
                 //free,
                 //subjects,
@@ -28,7 +29,7 @@ const StudentForm = () => {
             <label htmlFor='name'>
                 Name
             </label>
-            <input
+            <input class="text"
                 onChange={(e) => {
                     setName(e.target.value)
                 }}
@@ -36,10 +37,11 @@ const StudentForm = () => {
                 placeholder='Your Name'
                 name='name'
             />
+            <br></br>
             <label htmlFor='email'>
                 Email
             </label>
-            <input
+            <input class="text"
                 onChange={(e) => {
                     setEmail(e.target.value)
                 }}
@@ -47,11 +49,25 @@ const StudentForm = () => {
                 placeholder='Your Email'
                 name='email'
             />
-            <input
+            <br></br>
+            <label htmlFor='subject'>
+                Subject(s)
+            </label>
+            <input class="text"
+                onChange={(e) => {
+                    setSubjects(e.target.value)
+                }}
+                type='text'
+                placeholder='Your Subject(s)'
+                name='subject'
+                />
+                <br></br>
+            <input 
                 onClick={handleSubmit}
                 type="submit"
                 value='Register'
             />
+
         </div>
     )
 }
