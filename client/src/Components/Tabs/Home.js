@@ -31,8 +31,15 @@ function Home() {
                             <td>Science</td>
                             <td>5/20/2022</td>
                             <td>5th Period</td>
-                            <td>Calculator</td>
+                            <td>Bring Calculator</td>
                         </tr> 
+                        <tr>
+                            <td>Krishna Saraiya</td>
+                            <td>English</td>
+                            <td>5/29/2022</td>
+                            <td>1st-3rd Period</td>
+                            <td>Group Session</td>
+                        </tr>
                     </tbody>
                 </Table>
             </div>
